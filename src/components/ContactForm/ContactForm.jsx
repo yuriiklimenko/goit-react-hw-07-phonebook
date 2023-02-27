@@ -24,7 +24,7 @@ export const ContactForm = () => {
     dispatch(
       addContact({
         name: nameOnInput,
-        number: form.number.value,
+        phone: form.phone.value,
       })
     );
 
@@ -35,7 +35,7 @@ export const ContactForm = () => {
     <form className={css.form} onSubmit={handleSubmit}>
       <label className={css.label}>Name</label>
       <InputName />
-      <label className={css.label}>Number</label>
+      <label className={css.label}>Phone</label>
       <InputTel />
       <Button>Add Contact</Button>
     </form>
